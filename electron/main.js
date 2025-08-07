@@ -45,7 +45,7 @@ function createWindow() {
             webviewTag: true,
             preload: join(__dirname, 'preload.js'),
             scrollBounce: true,
-            devTools: true,
+            devTools: isDev,
             session: session.fromPartition('persist:MilaRef'),
             partition: 'persist:MilaRef',
             // nodeIntegration: true,
